@@ -14,8 +14,9 @@
 function swap(x, y){
     // Task 1: Add code here
     if (typeof x === 'number' && typeof y === 'number') {
-        x = y;
-        y = x;
+        x = x + y;
+        y = x - y;
+        x = x - y;
         console.log(`Value of x: ${x}, value of y: ${y}`)
     }else{
         return -1;
